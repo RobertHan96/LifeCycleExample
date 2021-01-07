@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0083B82825A441AA0057A714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083B82725A441AA0057A714 /* AppDelegate.swift */; };
 		0083B82A25A441AA0057A714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083B82925A441AA0057A714 /* SceneDelegate.swift */; };
-		0083B82C25A441AA0057A714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083B82B25A441AA0057A714 /* ViewController.swift */; };
+		0083B82C25A441AA0057A714 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083B82B25A441AA0057A714 /* MainViewController.swift */; };
 		0083B82F25A441AA0057A714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0083B82D25A441AA0057A714 /* Main.storyboard */; };
 		0083B83125A441AC0057A714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0083B83025A441AC0057A714 /* Assets.xcassets */; };
 		0083B83425A441AC0057A714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0083B83225A441AC0057A714 /* LaunchScreen.storyboard */; };
+		0083B83E25A44F630057A714 /* MyCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083B83D25A44F630057A714 /* MyCoinViewController.swift */; };
+		00C42A8D25A59683002E9129 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42A8C25A59683002E9129 /* Extensions.swift */; };
+		00C42A9E25A75D88002E9129 /* CoinInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */; };
+		00C42A9F25A75D88002E9129 /* CoinInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0083B82425A441AA0057A714 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0083B82725A441AA0057A714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0083B82925A441AA0057A714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0083B82B25A441AA0057A714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0083B82B25A441AA0057A714 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0083B82E25A441AA0057A714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0083B83025A441AC0057A714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0083B83325A441AC0057A714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0083B83525A441AC0057A714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0083B83D25A44F630057A714 /* MyCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoinViewController.swift; sourceTree = "<group>"; };
+		00C42A8C25A59683002E9129 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableViewCell.swift; sourceTree = "<group>"; };
+		00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinInfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				0083B82725A441AA0057A714 /* AppDelegate.swift */,
 				0083B82925A441AA0057A714 /* SceneDelegate.swift */,
-				0083B82B25A441AA0057A714 /* ViewController.swift */,
+				0083B82B25A441AA0057A714 /* MainViewController.swift */,
+				0083B83D25A44F630057A714 /* MyCoinViewController.swift */,
 				0083B82D25A441AA0057A714 /* Main.storyboard */,
 				0083B83025A441AC0057A714 /* Assets.xcassets */,
 				0083B83225A441AC0057A714 /* LaunchScreen.storyboard */,
 				0083B83525A441AC0057A714 /* Info.plist */,
+				00C42A8C25A59683002E9129 /* Extensions.swift */,
+				00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */,
+				00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */,
 			);
 			path = LifeCycle;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 			files = (
 				0083B83425A441AC0057A714 /* LaunchScreen.storyboard in Resources */,
 				0083B83125A441AC0057A714 /* Assets.xcassets in Resources */,
+				00C42A9F25A75D88002E9129 /* CoinInfoTableViewCell.xib in Resources */,
 				0083B82F25A441AA0057A714 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0083B82C25A441AA0057A714 /* ViewController.swift in Sources */,
+				00C42A8D25A59683002E9129 /* Extensions.swift in Sources */,
+				0083B82C25A441AA0057A714 /* MainViewController.swift in Sources */,
 				0083B82825A441AA0057A714 /* AppDelegate.swift in Sources */,
 				0083B82A25A441AA0057A714 /* SceneDelegate.swift in Sources */,
+				00C42A9E25A75D88002E9129 /* CoinInfoTableViewCell.swift in Sources */,
+				0083B83E25A44F630057A714 /* MyCoinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
