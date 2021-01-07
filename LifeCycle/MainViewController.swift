@@ -21,9 +21,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let coinInfoCell = tableView.dequeueReusableCell(withIdentifier: "coinInfoCell", for: indexPath) as? CoinInfoTableViewCell
             else { return UITableViewCell() }
-        coinInfoCell.coinName.text = coins[indexPath.row]
-        coinInfoCell.coinSymbolLabel.text = "\(coins[indexPath.row])".capitalized
-        coinInfoCell.coinPrice.text = "\(price[indexPath.row])"
+        let coinName = coins[indexPath.row]
+        let coinPrice = price[indexPath.row]
+        coinInfoCell.coinName.text = coinName
+        coinInfoCell.coinSymbolLabel.text = String(coinName.first ?? "B").capitalized
+        coinInfoCell.coinPrice.text = "₩\(coinPrice)"
         
         return coinInfoCell
     }

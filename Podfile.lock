@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - DLLocalNotifications (0.08)
+  - DropDown (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - DLLocalNotifications
+  - DropDown (= 2.3.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DLLocalNotifications
+    - DropDown
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DLLocalNotifications: 92ee357278e90b0f2b2da1bb0e5a7e7fb179354e
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+
+PODFILE CHECKSUM: 35104e1cd06c90132e27b400f583922e257ab43d
+
+COCOAPODS: 1.10.0

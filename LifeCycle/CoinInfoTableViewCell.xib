@@ -19,44 +19,53 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEG-RW-Uuz">
-                        <rect key="frame" x="67" y="10" width="372" height="95"/>
+                        <rect key="frame" x="56" y="10" width="383" height="95"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BtiCoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sug-MF-6be">
-                                <rect key="frame" x="0.0" y="29.5" width="95" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="0.0" y="32" width="82" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8aG-Ec-kyS">
-                                <rect key="frame" x="115" y="0.0" width="114" height="95"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-6v-qBe">
+                                <rect key="frame" x="134.5" y="0.0" width="114" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzc-Rh-rIR">
-                                        <rect key="frame" x="0.0" y="0.0" width="42" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="quaternarySystemFillColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42,375,909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-HS-T0E">
-                                        <rect key="frame" x="0.0" y="47.5" width="114" height="47.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="42,375,909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-HS-T0E">
+                                        <rect key="frame" x="0.0" y="20.5" width="114" height="74.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Yji-HS-T0E" firstAttribute="top" secondItem="lzc-Rh-rIR" secondAttribute="bottom" id="1Sb-j2-ezB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yji-HS-T0E" secondAttribute="bottom" id="1tC-Bt-2fB"/>
+                                    <constraint firstItem="Yji-HS-T0E" firstAttribute="leading" secondItem="VbT-6v-qBe" secondAttribute="leading" id="HBW-8e-FdI"/>
+                                    <constraint firstItem="lzc-Rh-rIR" firstAttribute="leading" secondItem="VbT-6v-qBe" secondAttribute="leading" id="NF9-zr-T9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yji-HS-T0E" secondAttribute="trailing" id="RQ9-LI-G1u"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzc-Rh-rIR" secondAttribute="trailing" id="YEg-hR-Six"/>
+                                    <constraint firstItem="lzc-Rh-rIR" firstAttribute="top" secondItem="VbT-6v-qBe" secondAttribute="top" id="n8v-Co-ChW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="8aG-Ec-kyS" firstAttribute="top" secondItem="jEG-RW-Uuz" secondAttribute="top" id="S7Q-Fr-Yb6"/>
-                            <constraint firstItem="8aG-Ec-kyS" firstAttribute="centerY" secondItem="sug-MF-6be" secondAttribute="centerY" id="ZSl-6N-FEl"/>
-                            <constraint firstAttribute="bottom" secondItem="8aG-Ec-kyS" secondAttribute="bottom" id="f2n-B1-zba"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8aG-Ec-kyS" secondAttribute="trailing" constant="10" id="fTd-op-nZn"/>
+                            <constraint firstAttribute="bottom" secondItem="VbT-6v-qBe" secondAttribute="bottom" id="6t6-Y7-HuT"/>
+                            <constraint firstItem="VbT-6v-qBe" firstAttribute="top" secondItem="jEG-RW-Uuz" secondAttribute="top" id="Enl-rL-X1x"/>
+                            <constraint firstItem="VbT-6v-qBe" firstAttribute="centerY" secondItem="sug-MF-6be" secondAttribute="centerY" id="Qea-6R-HY6"/>
                             <constraint firstItem="sug-MF-6be" firstAttribute="leading" secondItem="jEG-RW-Uuz" secondAttribute="leading" id="ice-SY-2xT"/>
-                            <constraint firstItem="8aG-Ec-kyS" firstAttribute="leading" secondItem="sug-MF-6be" secondAttribute="trailing" constant="20" id="zs2-Lh-hwp"/>
+                            <constraint firstItem="VbT-6v-qBe" firstAttribute="centerX" secondItem="jEG-RW-Uuz" secondAttribute="centerX" id="x8q-bn-dUD"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-Df-E1A">
-                        <rect key="frame" x="10" y="21.5" width="37" height="72"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                        <rect key="frame" x="10" y="33.5" width="26" height="48"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -82,6 +91,9 @@
     <resources>
         <systemColor name="quaternarySystemFillColor">
             <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
