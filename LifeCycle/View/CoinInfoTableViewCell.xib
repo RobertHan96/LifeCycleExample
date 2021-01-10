@@ -22,23 +22,23 @@
                         <rect key="frame" x="56" y="10" width="383" height="95"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BtiCoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sug-MF-6be">
-                                <rect key="frame" x="0.0" y="32" width="82" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <rect key="frame" x="0.0" y="35.5" width="63.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-6v-qBe">
-                                <rect key="frame" x="134.5" y="0.0" width="114" height="95"/>
+                                <rect key="frame" x="147.5" y="0.0" width="88.5" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzc-Rh-rIR">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="quaternarySystemFillColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="42,375,909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-HS-T0E">
-                                        <rect key="frame" x="0.0" y="20.5" width="114" height="74.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="88.5" height="74.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -63,8 +63,9 @@
                             <constraint firstItem="VbT-6v-qBe" firstAttribute="centerX" secondItem="jEG-RW-Uuz" secondAttribute="centerX" id="x8q-bn-dUD"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-Df-E1A">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-Df-E1A">
                         <rect key="frame" x="10" y="33.5" width="26" height="48"/>
+                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

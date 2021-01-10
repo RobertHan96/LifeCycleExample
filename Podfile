@@ -6,7 +6,9 @@ target 'LifeCycle' do
   use_frameworks!
 
   # Pods for LifeCycle
-pod 'DropDown', '2.3.2'
+pod 'SwiftyJSON', '~> 4.0'
 pod 'Alamofire', '~> 5.2'
+pod 'DropDown'
 pod 'DLLocalNotifications'
+
 end

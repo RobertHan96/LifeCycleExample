@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		00C42A8D25A59683002E9129 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42A8C25A59683002E9129 /* Extensions.swift */; };
 		00C42A9E25A75D88002E9129 /* CoinInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */; };
 		00C42A9F25A75D88002E9129 /* CoinInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */; };
+		00C42AC425A773E3002E9129 /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42AC325A773E3002E9129 /* CoinAPI.swift */; };
+		00C42AC725A77415002E9129 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42AC625A77415002E9129 /* Coin.swift */; };
+		00C42AD925AB0BBA002E9129 /* MyCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C42AD825AB0BBA002E9129 /* MyCoin.swift */; };
 		36F84B6171E6E6183F8EF4EF /* Pods_LifeCycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B475FEA4BEF809F4AA2A549 /* Pods_LifeCycle.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		00C42A8C25A59683002E9129 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableViewCell.swift; sourceTree = "<group>"; };
 		00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinInfoTableViewCell.xib; sourceTree = "<group>"; };
+		00C42AC325A773E3002E9129 /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
+		00C42AC625A77415002E9129 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		00C42AD825AB0BBA002E9129 /* MyCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoin.swift; sourceTree = "<group>"; };
 		42288F0D498FD709A359D28D /* Pods-LifeCycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCycle.release.xcconfig"; path = "Target Support Files/Pods-LifeCycle/Pods-LifeCycle.release.xcconfig"; sourceTree = "<group>"; };
 		5B475FEA4BEF809F4AA2A549 /* Pods_LifeCycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeCycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD44EEFDAAE930BA19694877 /* Pods-LifeCycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCycle.debug.xcconfig"; path = "Target Support Files/Pods-LifeCycle/Pods-LifeCycle.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,19 +77,46 @@
 		0083B82625A441AA0057A714 /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				0083B83525A441AC0057A714 /* Info.plist */,
+				0083B83025A441AC0057A714 /* Assets.xcassets */,
 				0083B82725A441AA0057A714 /* AppDelegate.swift */,
 				0083B82925A441AA0057A714 /* SceneDelegate.swift */,
-				0083B82B25A441AA0057A714 /* MainViewController.swift */,
-				0083B83D25A44F630057A714 /* MyCoinViewController.swift */,
-				0083B82D25A441AA0057A714 /* Main.storyboard */,
-				0083B83025A441AC0057A714 /* Assets.xcassets */,
-				0083B83225A441AC0057A714 /* LaunchScreen.storyboard */,
-				0083B83525A441AC0057A714 /* Info.plist */,
-				00C42A8C25A59683002E9129 /* Extensions.swift */,
-				00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */,
-				00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */,
+				00C42AD625A7E4C0002E9129 /* Controller */,
+				00C42AC225A773D2002E9129 /* Model */,
+				00C42AD525A7E4B6002E9129 /* View */,
 			);
 			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		00C42AC225A773D2002E9129 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00C42AC325A773E3002E9129 /* CoinAPI.swift */,
+				00C42AC625A77415002E9129 /* Coin.swift */,
+				00C42A8C25A59683002E9129 /* Extensions.swift */,
+				00C42AD825AB0BBA002E9129 /* MyCoin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00C42AD525A7E4B6002E9129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0083B82D25A441AA0057A714 /* Main.storyboard */,
+				0083B83225A441AC0057A714 /* LaunchScreen.storyboard */,
+				00C42A9D25A75D88002E9129 /* CoinInfoTableViewCell.xib */,
+				00C42A9C25A75D88002E9129 /* CoinInfoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00C42AD625A7E4C0002E9129 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0083B83D25A44F630057A714 /* MyCoinViewController.swift */,
+				0083B82B25A441AA0057A714 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7AC3511E535180D35899BF68 /* Frameworks */ = {
@@ -100,7 +133,6 @@
 				FD44EEFDAAE930BA19694877 /* Pods-LifeCycle.debug.xcconfig */,
 				42288F0D498FD709A359D28D /* Pods-LifeCycle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,6 +257,9 @@
 				0083B82A25A441AA0057A714 /* SceneDelegate.swift in Sources */,
 				00C42A9E25A75D88002E9129 /* CoinInfoTableViewCell.swift in Sources */,
 				0083B83E25A44F630057A714 /* MyCoinViewController.swift in Sources */,
+				00C42AD925AB0BBA002E9129 /* MyCoin.swift in Sources */,
+				00C42AC725A77415002E9129 /* Coin.swift in Sources */,
+				00C42AC425A773E3002E9129 /* CoinAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiofirstzero.LifeCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -403,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiofirstzero.LifeCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

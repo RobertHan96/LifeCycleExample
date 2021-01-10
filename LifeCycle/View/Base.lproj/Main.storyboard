@@ -117,7 +117,7 @@
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                         <state key="normal" image="plus.circle.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="AddMyCoins:" destination="sQz-3d-OkH" eventType="touchUpInside" id="4c5-B0-azl"/>
+                                            <action selector="addMyCoin:" destination="sQz-3d-OkH" eventType="touchUpInside" id="4c5-B0-azl"/>
                                         </connections>
                                     </button>
                                 </subviews>

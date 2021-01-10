@@ -10,9 +10,7 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var dateInformLabel: UILabel!
     @IBOutlet weak var coinMarketTableView: UITableView!
-    let coins = ["btc", "dash", "ripple"]
-    let price = [42383909, 5961, 369]
-    
+    var coins : [Coin] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         coins.count
@@ -21,8 +19,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let coinInfoCell = tableView.dequeueReusableCell(withIdentifier: "coinInfoCell", for: indexPath) as? CoinInfoTableViewCell
             else { return UITableViewCell() }
-        let coinName = coins[indexPath.row]
-        let coinPrice = price[indexPath.row]
+        let coinName = coins[indexPath.row].name
+        let coinPrice = coins[indexPath.row].price
         coinInfoCell.coinName.text = coinName
         coinInfoCell.coinSymbolLabel.text = String(coinName.first ?? "B").capitalized
         coinInfoCell.coinPrice.text = "₩\(coinPrice)"
@@ -30,6 +28,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return coinInfoCell
     }
 
+    private func reloadCoinData() {
+        CoinAPI().sendRequest (completion: { (coin) in
+            self.coins = coin
+            self.coinMarketTableView.reloadData()
+        }, isMyCoin: false)
+    }
+    
     override func loadView() {
         super.loadView()
         print("loadView")
@@ -38,6 +43,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // 시세 정보 로딩
     override func viewDidLoad() {
         super.viewDidLoad()
+        reloadCoinData()
         setupUI()
         print("viewDidLoad")
     }
@@ -45,6 +51,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // 시세 정보 갱신
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
+        reloadCoinData()
         print("viewWillAppear")
     }
     
